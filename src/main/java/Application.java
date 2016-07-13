@@ -6,8 +6,8 @@ public class Application {
     public static void main(String[] args) {
 
         // Palindrome String check
-//        StringPalindrome sPalindrome = new StringPalindrome();
-//        sPalindrome.stringPalindrome("");
+        StringPalindrome sPalindrome = new StringPalindrome();
+        sPalindrome.stringPalindrome("");
 
         // Remove a char from String
         RemoveAnyCharFromString charFromString = new RemoveAnyCharFromString();
