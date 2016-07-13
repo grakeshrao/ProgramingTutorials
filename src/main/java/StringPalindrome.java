@@ -24,4 +24,9 @@ public class StringPalindrome {
         }
     }
 
+    public static void main(String[] args) {
+        StringPalindrome sPalindrome = new StringPalindrome();
+        sPalindrome.stringPalindrome("bob");
+    }
+
 }

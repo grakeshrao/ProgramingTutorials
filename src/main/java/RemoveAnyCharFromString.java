@@ -14,4 +14,10 @@ public class RemoveAnyCharFromString {
         System.out.println(newStr);
         return newStr;
     }
+
+    public static void main(String[] args) {
+        // Remove a char from String
+        RemoveAnyCharFromString charFromString = new RemoveAnyCharFromString();
+        charFromString.removeAnyCharFromString("Rakesh", 'a');
+    }
 }
