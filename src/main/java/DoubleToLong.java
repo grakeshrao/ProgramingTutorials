@@ -9,14 +9,21 @@ public class DoubleToLong {
      * The logic for converting a double value to long
      */
     public static void main (String[] args) {
-        String a = "-12.9";
+        convertToLong("-12.66");
+        convertToLong("12.66");
+        convertToLong("-12");
+        convertToLong("12");
+        convertToLong("12345.0000");
+
+    }
+
+    public static void convertToLong(String a) {
         String valueStr = a.toString();
         if (StringUtils.isNotBlank(valueStr)) {
             Long longValue =  (long) Double.parseDouble(valueStr);
-            System.out.print(longValue);
+            System.out.println(longValue);
         } else {
-            System.out.print("Null value");
+            System.out.println("Null value");
         }
-
     }
 }
