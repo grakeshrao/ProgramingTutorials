@@ -7,12 +7,15 @@ import java.util.Map;
 public class FirstNonRepeatedCharInString {
 
     public static void main(String[] args) {
-        FirstNonRepeatedCharInString fn = new FirstNonRepeatedCharInString();
-        fn.firstNonRepeatedString("Infoconnect");
+        firstNonRepeatedString("Infoconnect");
     }
 
+    /**
+     *
+     * @param word
+     */
     // Logic for finding first NonRepeated String
-    public void firstNonRepeatedString(String word) {
+    private static void firstNonRepeatedString(String word) {
 
         String lowerWord = word.toLowerCase();
 
@@ -27,7 +30,13 @@ public class FirstNonRepeatedCharInString {
         }
     }
 
-    protected Map<Character, Integer> splitStringToMap(String word) {
+    /**
+     *
+     * @param word : this string is converted to hasMap depending on the count of occurrence of each letter.
+     * @return map: The map contains detail information about the occurrence of each letter from the input string
+     */
+
+    protected static Map<Character, Integer> splitStringToMap(String word) {
         Map<Character, Integer> map = new HashMap<Character, Integer>();
 
         for (int i = 0; i < word.length() - 1; i++) {

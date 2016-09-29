@@ -18,7 +18,7 @@ public class FindDuplicateWordsInString {
         Set<Character> wordSet = new HashSet<Character>();
          int len = word.length();
         System.out.println("The duplicate characters in the String are: ");
-        for (int i = 0; i <= word.length() - 1; i++) {
+        for (int i = 0; i <= len - 1; i++) {
             char ch = word.charAt(i);
             if (!wordSet.add(ch)) {
                 System.out.println(ch);
