@@ -1,4 +1,4 @@
-import org.apache.commons.lang3.StringUtils;
+package com.general;
 
 import java.util.Map;
 
@@ -13,7 +13,7 @@ public class CountOccurrenceOfCharInString extends FirstNonRepeatedCharInString 
     }
 
     /**
-     * Logic for counting occurrence of the characters in String. We are reusing the splitStringToMap from FirstNonRepeatedCharInString class.
+     * Logic for counting occurrence of the characters in String. We are reusing the splitStringToMap from com.general.FirstNonRepeatedCharInString class.
      * @param word
      * @param ch
      */
